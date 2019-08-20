@@ -1,0 +1,1 @@
+file to initialize folder for writing red grouper tpl file for admb
