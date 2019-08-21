@@ -7,9 +7,9 @@ model.start.yr=1976                     #Starting year of model
 model.end.yr=2015                       #Ending year of model
 rec.start.yr=1976                       #Starting year to estimate recruitment deviation from S-R curve
 rec.end.yr=2015                         #Ending year to estimate recruitment deviation from S-R curve
-rec.dev.constraint.end.yrs=c(1997,2013) #ending years of recruitment constraint phases
+rec.dev.constraint.end.yrs=c(1977,2013) #ending years of recruitment constraint phases
 reg.end.yrs=c(1983,1991)                #ending years of regulation period
-size.lim=c(304.0,508.0)                 #Size limits
+size.lim=c(304.8,508.0)                 #Size limits
 start.age=1
 max.age=16
 plus.age=16                             #Maximum age used to match age comps
@@ -21,7 +21,7 @@ n.iter=10001
 avg.rec.start.yr=1976
 avg.rec.end.yr=2015
 avg.f.yrs=3
-bias.cor=3
+bias.cor=-1
 # .dat miscellaneous stuff section
 lw.a=0.000000008418                     #length-weight (TL-whole wgt) coefficients a , W=aL^b, (W in kg, TL in mm)--sexes combined
 lw.b=3.1                                #length-weight (TL-whole wgt) coefficients b , W=aL^b, (W in kg, TL in mm)--sexes combined
@@ -246,11 +246,11 @@ write(x="0.35",file=datfile.name,append=T)
 write(x="##Year for tuning F",file=datfile.name,append=T)
 write(x="2008",file=datfile.name,append=T)
 write(x="##threshold sample sizes ntrips (>=)for length comps (set to 99999.0 if sel is fixed): ",file=datfile.name,append=T)
-write(x="1.0    #cH len comps",file=datfile.name,append=T)
-write(x="1.0    #CVT len comps",file=datfile.name,append=T)
+write(x="30.0    #cH len comps",file=datfile.name,append=T)
+write(x="30.0    #CVT len comps",file=datfile.name,append=T)
 write(x="##threshold sample sizes ntrips (>=) for age comps (set to 99999.0 if sel is fixed)",file=datfile.name,append=T)
-write(x="1.0    #cH age comps",file=datfile.name,append=T)
-write(x="1.0    #CVT age comps",file=datfile.name,append=T)
+write(x="15.0    #cH age comps",file=datfile.name,append=T)
+write(x="15.0    #CVT age comps",file=datfile.name,append=T)
 
 write(x="## Projection input",file=datfile.name,append=T)
 write(x="2025 #Projection end year, must be later than assessment endyr",file=datfile.name,append=T)

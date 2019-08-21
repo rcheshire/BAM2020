@@ -13,14 +13,14 @@
 #3 phases of constraints on recruitment deviations: 
 #allows possible heavier constraint (weights defined later) in early and late period, with lighter constraint in the middle
 #ending years of recruitment constraint phases
-1997
+1977
 2013
 #3 periods of size regs: yr1-83 no restrictions, 1984-91 12-inch TL, 1992-09 20-in TL
 #ending years of regulation period
 1983
 1991
 #Size limits
-304
+304.8
 508
 #Number of ages in population model(16 classes are 1,...,N+) //assumes last age is plus group
 16
@@ -46,9 +46,9 @@
 #Number years at end of time series over which to average sector Fs, for weighted selectivities
 3
 #Multiplicative bias correction of recruitment (may set to 1.0 for none or negative to compute from recruitment variance)
-3
+-1
 ####################################################################
-BAM: observed data
+# BAM: observed data
 ####################################################################
 ########## age ############
 ####################################################################
@@ -320,11 +320,11 @@ BAM: observed data
 ##Year for tuning F
 2008
 ##threshold sample sizes ntrips (>=)for length comps (set to 99999.0 if sel is fixed): 
-1.0    #cH len comps
-1.0    #CVT len comps
+30.0    #cH len comps
+30.0    #CVT len comps
 ##threshold sample sizes ntrips (>=) for age comps (set to 99999.0 if sel is fixed)
-1.0    #cH age comps
-1.0    #CVT age comps
+15.0    #cH age comps
+15.0    #CVT age comps
 ## Projection input
 2025 #Projection end year, must be later than assessment endyr
 2017 #New management start year, must be later than assessment endyr
