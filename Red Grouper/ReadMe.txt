@@ -4,6 +4,11 @@ General approach
 3. run stripped down red grouper assessment model with new .dat file and compare results
     -had to modify tpl to match order of fleet loop (cH, serfs)
 ************* currently here, results don't match trying to figure out why
+************** not so 'ta da' fixes
+                    spawning time fract differed - automated in R script but does not match s53 value for mid-april
+                        fixed to s53 value - no improvement
+                    modified significant digits in landings and discard csv files to match data
+                    
 4. write .tpl with r script
 5. run strippped down red grouper assessment model with new .dat and .tpl and compare results
 6. write .cxx with r script
