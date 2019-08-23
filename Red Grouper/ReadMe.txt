@@ -8,7 +8,8 @@ General approach
                     spawning time fract differed - automated in R script but does not match s53 value for mid-april
                         fixed to s53 value - no improvement
                     modified significant digits in landings and discard csv files to match data
-                    
+**************** comparing (in emacs, waiting for notepad compare plugin to be installed) .rdat files for each run 
+**************** will compare .dat files when notepad is installed, better at skipping irrelevant diffs
 4. write .tpl with r script
 5. run strippped down red grouper assessment model with new .dat and .tpl and compare results
 6. write .cxx with r script
